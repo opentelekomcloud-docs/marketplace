@@ -3,187 +3,193 @@
 Seller
 ======
 
-In this section we talk about how to use Marketplace as a “Seller”. This includes how to become a marketplace seller and how to on-board, manage and eventually off-board a product.
+Section covers the features available for Seller from becoming a seller, publishing a Product Offering to enabling end of life for Product Offering.
 
 Become a Seller
 ---------------
 
-Anyone who has a Tennent in Open Telekom Cloud can request to become a seller in Marketplace. The process is quite straight forward.
+Pre-requisite: OTC user with Tenant Admin Role 
 
-As shown in the picture there is a link available to request for that when you click on Login as a Seller.
+Click on ‘Become a Seller’. Please refer to Diagram 1.
 
-.. image:: /_static/images/image1.png
+.. figure:: /_static/images/image1.png
    :width: 6.53194in
    :height: 1.88264in
+   :alt: Diagram 1 Become a Seller 
 
-After clicking you would be redirected to a page where you are supposed to login with your OTC account.
+   **Diagram 1** Become a Seller
 
-.. image:: /_static/images/image2.png
+Next, you will be redirected to the screen below (Diagram 2) to validate the Pre-Requisite (OTC user with Tenant Admin Role) to become a Seller.
+
+.. figure:: /_static/images/image2.png
    :width: 6.53194in
    :height: 4.09097in
+   :alt: Diagram 2 Login (Validate OTC user with Tenant Admin role) 
 
-Please be aware that only users which has “Tenant Administrator” role can submit a request for their tenant to become a Seller.
+   **Diagram 2** Login (Validate OTC user with Tenant Admin role)
 
-After login, as show below, you need to accept the terms and conditions and provide an email which would be used by Marketplace to contact Seller for any notification.
+After login, you are directed to provide basic Organizational Information of your company and accept the Terms and Conditions.
 
-When the request has been submitted, you would receive an email which let you know the process of on boarding you as a Seller in Marketplace has been started and soon you would be informed about that.
+Please refer to Diagram 3. 
 
-As Open Telekom Cloud needs to follow some procedures this action might take few working-days.
+.. figure:: /_static/images/image34.png
+   :alt: Diagram 3 Seller Organizational Information
+   :scale: 50%
 
-Eventually, you would receive an email which informs you that you have become a Marketplace Seller would be able to start offering your products in Marketplace.
+   **Diagram 3** Seller Organizational Information
+
+After the request is submitted, Open Telekom Cloud will activate the Seller and will keep you informed via e-mail (Seller E-mail) about the request. 
 
 Login
 -----
 
-As shown in the picture Login to Marketplace as a Seller is straight forward and you can login using your IAM account.
+Login is only possible after the user has become a Seller. Click on the ‘Seller Login’ to access the Marketplace Seller Center (Diagram 4).
 
-Note: It is recommended to use Chrome or Microsoft Edge to login as the seller.
+**Note:** It is recommended to use Chrome or Microsoft Edge to login as the seller.
 
-Please be aware that to login as the “Seller” you first need to become a seller in OTC Marketplace.
-
-.. image:: /_static/images/image3.png
+.. figure:: /_static/images/image3.png
    :width: 6.53194in
    :height: 1.69097in
+   :alt: Diagram 4a Seller Login
 
-Please be aware that only users which has “Tenant Administrator” role can login to the Marketplace as a Seller.
+   **Diagram 4a** Seller Login
 
-.. image:: /_static/images/image4.png
+Only OTC user with ‘Tenant Administration’ role can login in Marketplace Beta now.
+
+.. figure:: /_static/images/image4.png
    :width: 6.53194in
    :height: 3.28681in
+   :alt: Diagram 4b Seller Login
 
-If the login is successful, then you would see the page as bellow. There you can select a product to deploy and use.
+   **Diagram 4b** Seller Login
 
-.. image:: /_static/images/image5.png
+If the login is successful, then you are directed to the Marketplace Homepage (Diagram 5).
+
+.. figure:: /_static/images/image5.jpg
    :width: 6.53194in
    :height: 4.06944in
+   :alt: Diagram 5 Marketplace Homepage
+
+   **Diagram 5** Marketplace Homepage
 
 .. _publish-product-offering-1:
 
 Publish Product Offering
 ------------------------
 
-In Section we would talk about how to create a product to be offered to Customers. Based on the type of product and licensing the procedure mightily differ. The main step would be first deciding what type of Product with which type of licensing the offer would be.
+Sellers can use the component ‘Dashboard’ and sub-component ‘Product Offering Provisioning’ to publish the Product Offering.
 
-Please be aware that type and licensing model of the product are not changeable at all. This means if the product has been created as a “Free” licensing for a CCE type application, it cannot be changed to any other type of product with different licensing model.
+Service Type: CCE, License Type: Open Source, Free, Trial
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-CCE Open Source, Free or Trial
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Seller can use the license type ‘Open source, free or trial’ to use offer helm chart based Product Offering. After login, please go the ‘Dashboard’.
 
-If you have a Helm Chart to deploy an application and your product is free to be used (as Open Source, Free or Trial), then this is the right choice to on-board that on Marketplace.
-
-First step would be login Marketplace as a Seller as show in this picture.
-
-.. image:: /_static/images/image6.png
-   :width: 6.53194in
-   :height: 1.79306in
-
-Please be aware that only users which has “Tenant Administrator” role can login to the Marketplace as a Seller.
-
-.. image:: /_static/images/image7.png
-   :width: 6.53194in
-   :height: 3.53889in
-
-On the right side of the page, you would see a button named “Dashboard”.
-
-.. image:: /_static/images/image8.png
-   :width: 6.53194in
-   :height: 2.42431in
-
-Please click that and then select “Offering”.
-
-.. image:: /_static/images/image9.png
+.. figure:: /_static/images/image9.png
    :width: 6.53194in
    :height: 2.35139in
+   :alt: Diagram 6 New Offering
 
-Click on the new Offering to be forwarded to the new page to create your product. There you should fill out all the required information as needed.
+   **Diagram 6** New Offering
 
-.. image:: /_static/images/image10.png
+Product Offering is the seller’s published software (incl. service type of the Open Telekom Cloud, license type and seller’s software name) on the Marketplace.
+
+Seller has to provide Helm chart of the Seller’s software to publish CCE based Product Offering. Currently only Service Type - ‘CCE’ is available with License types ‘Open Source, Free, Trial or BYOL (Bring Your Own License).’ The key information cannot be changed once a draft is created.
+
+.. figure:: /_static/images/image10.png
    :width: 6.53194in
    :height: 3.05278in
+   :alt: Diagram 7 Product Offering (Key Information)
+
+   **Diagram 7** Product Offering (Key Information)
 
 Product Offering Name
 ^^^^^^^^^^^^^^^^^^^^^
 
-Here you should pick up a name for your product. Customers would find you product in Marketplace with that name.
-
-Please be aware that the product name is permanent and cannot be change as marketplace is committed to Customers that they always refer to the same name for specific product.
+Name of the Product Offering cannot be changed after publication.
 
 Service Type
 ^^^^^^^^^^^^
 
-Here you should choose which type of product it would be. So far you can only choose CCE as the type of Product which is for Helm Charts to be offered.
+Service Type is the type of IaaS provided by OTC to create the offering (Prerequisite of Service Type CCE: Helm-chart of the product/service).
+
+CCE is OTC’s Cloud Container Engine.
 
 License Type
 ^^^^^^^^^^^^
 
-As mentioned before, you are supposed to choose between Open Source, Free or Trial. This means that customer will get charged 0.00€ if they deploy that product.
+License type is the license option (Open Source, Free, Trial or BYOL (Bring Your own License)) to create the offering.
 
 License Info
 ^^^^^^^^^^^^
 
-Here you can put information about licensing of your product which would be shown to customers when they select your Product inside Marketplace.
+Field for additional information on license that the seller needs to provide to the customer.
 
 EULA
 ^^^^
 
-Each company has some terms and conditions that clients need to agree on before using that product. Here Seller can add his/her EULA. When a customer wants to deploy that product, he/she needs to agree on that before being able to deploy that application.
+The EULA (End User License Agreement) of the Product Offering (i.e. Seller’s Software) must be provided. The customer and seller relation is bound by the EULA.
 
 Category
 ^^^^^^^^
 
-Here you can select in which category your product would fit in. Customer would filter product inside marketplace based on specific Category.
+Category of the Product Offering ex. Monitoring, Security etc. is selected.
 
 Version
 ^^^^^^^
 
-Here you can set the version of your application so Customers would know which version of that has been presented in Marketplace.
+Version of the seller’s software can be provided.
 
 Short Description
 ^^^^^^^^^^^^^^^^^
 
-Short Description is the information that would be shown to Customers when they find it inside main page of Marketplace. This could be a brief introduction about the product that seller is offering.
+Short description of the Product Offering can be provided in the text field.
 
 Full Description
 ^^^^^^^^^^^^^^^^
 
-When a customer would find and select a product, this description would go into details of that product and Customer can read and find more information about that product.
+Detailed description of the Product Offering can be provided the text field. 
 
 Logo
 ^^^^
 
-Here Seller is supposed to upload the logo of his/her product.
+Logo of the Seller’s software can be uploaded in the section.
 
 “Used Software”, “Used Software License Name” and “Link to License”
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As each application might have used other applications as component, Customers has the right to know which software has been used for that product. This include the name of that and name of the license that has been used for that (Such as MIT or Apache v2.0) so they could be able to review that and make sure this does not violate their policies.
+Addition information of used softwares in the Product Offering (i.e. Seller’s Software) can be provided in these fields.
 
-This list of component's license information would be shown as the detail of the product.
+Seller is obliged to provide transparency on used softwares to the customer.
+
+Information includes the software names, licenses and links to the terms and conditions of license.
+
+Examples of license are MIT or Apache v2.0.
 
 Add Configuration
 ^^^^^^^^^^^^^^^^^
 
-As the product is a Helm Chart, it has many keys that customer can customized by overwriting with new values. Although Helm Chart could have many keys to get customized, it is up to seller with of them should be on-boarded on Marketplace, so Customers be able to manipulate them.
+Seller can configure the parameters of helm charts of the Product Offering (seller’s software).
 
-Please be aware that some keys that have been added by seller to customize deployment could also be hidden to customer. This can be used when your help chart needs to be modified based on Open Telekom Cloud CCE and seller wants to make that change permanent, so customers did not change it by mistake.
-
-Configurations could be a “Text input” (Text or Array), Option (Text or Array) which is like “Text Input” but default values are fixed and customer can only select from those values to choose or a Toggle (Boolean) that customer needs to make it as True or False.
+Configurations can be (Diagram 8) a “Text input” (Text or Array), Option (Text or Array) such as “Text Input” or a Toggle (Boolean) that customer needs to provide as True or False.
 
 Text input
 ''''''''''
 
-This can be used for adding a key which is the type of string or array.
+Option can be used for adding a key that is of type string or array.
 
-.. image:: /_static/images/image11.png
+.. figure:: /_static/images/image11.png
    :width: 6.53194in
    :height: 3.77361in
+   :alt: Diagram 8 Configuration Options
+
+   **Diagram 8** Configuration Options
 
 Configuration Key
                  
 
 Is the equivalent of Helm Chart key. It means that rules of the Yaml shall be followed here.
 
-For example, if inside values.yaml file there is main key as “global” and then “storageClass” as sub key, then the content of “Configuration Key” would be “global. storageClass”
+For example, if inside values.yaml file there is main key as “global” and then “storageClass” as sub key, then the content of “Configuration Key” would be “global. storageClass”.
 
 Text input label
                 
@@ -258,7 +264,7 @@ Configuration Key
 
 Is the equivalent of Helm Chart key. It means that rules of the Yaml shall be followed here.
 
-For example, if inside values.yaml file there is main key as “global” and then “storageClass” as sub key, then the content of “Configuration Key” would be “global. storageClass”
+For example, if inside values.yaml file there is main key as “global” and then “storageClass” as sub key, then the content of “Configuration Key” would be “global. storageClass”.
 
 Optional label
               
@@ -355,9 +361,11 @@ For example, for the key as “global. storageClass” with the label of “stor
 Add pre-Deployment guide
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-When a customer selects a product, this message would be show on the screen to him/her. Here seller can provide pre-deployment hints or guidance that customer can be aware before the deployment.
+Seller can provide pre-deployment information that a customer needs to know before deployment.
 
-This is a good place for guiding customers who wants to use that product.
+Information such as suggested infrastructure environment or sizing etc.
+
+This is a good place for guiding customers who wants to use the product offering.
 
 .. image:: /_static/images/image14.png
    :width: 6.53194in
@@ -366,7 +374,7 @@ This is a good place for guiding customers who wants to use that product.
 Add deployment guide
 ^^^^^^^^^^^^^^^^^^^^
 
-Although hints and tooltips that seller would add to each configuration could be descriptive, seller needs to prepare small document to depict how to deploy and customize that product. The whole content would be shown to customer as an installation guide.
+Although hints and tooltips that seller would add to each configuration could be descriptive, seller may prepare small document to depict how to deploy and customize that product. The whole content would be shown to customer as an installation guide.
 
 .. image:: /_static/images/image15.png
    :width: 6.53194in
@@ -375,9 +383,7 @@ Although hints and tooltips that seller would add to each configuration could be
 Post post-deployment guide
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When a customer selects a product and deploys that, this message would be show on the screen to him/her. Here seller can provide day-2 operation hints or guidance that customer can be aware after the deployment.
-
-This is a good place for guiding customers who has deployed and used that product.
+Information provided to support customer after the deployment of the Product Offering. Ex. How can the customer operate seller’s product offering.
 
 .. image:: /_static/images/image16.png
    :width: 6.53194in
@@ -386,89 +392,77 @@ This is a good place for guiding customers who has deployed and used that produc
 Seller Helm Chart Address
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Marketplace would require grabbing the Helm Chart of product from a helm registry. Here seller is supposed to put the address of that.
+Marketplace will fetch the helm chart of the Product Offering (seller’s software) from the provided link and eventually store the helm chart in an internal repository.
 
 Seller Helm Chart Version
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As each Helm Chart has different versions available, seller is supposed to mention which version from helm chart should be presented to customers. Marketplace would grab and on board only that specific version of helm chart.
+Helm chart version that the Marketplace will use in Product Offering.
 
 Requested Release Date
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Based on the preference or company's policy, seller can let Marketplace knows when a proper time for that product (or product update) would be to get released and customers can use that.
+Seller can request a release date to publish the Product Offering.
 
-Please be aware that Marketplace does not have any commitment to this date as there might be some technical efforts that marketplace needs to tackle before releasing that to customer.
+The publication (date and time) lies solely on discretion of Marketplace due to internal processes.
+
+Request release date is not guaranteed but will be considered to the best of case.
 
 Submit the request
 ^^^^^^^^^^^^^^^^^^
 
-When seller is happy with the information, he/she has provided for the product and if all required data has been added and the product has been assessed by the seller itself, then it would be time to submit that for further investigation by Marketplace and set a release time for that. Please be aware that this might be a time consuming as marketplace should take care of some technical matters before preparing the product for release.
+Seller can submit the request when all fields have been duly filled.
 
-Seller would be notified by email when the product has been approved with a release time or has been rejected because of a reason.
+Marketplace will review the request and approve the publication.
 
-CCE Bring Your Own License
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Please note that the review process will take some time.
 
-If you have a Helm Chart to deploy an application and your product needs a license in advance (Bring Your Own License), then this is the right choice to on-board that on Marketplace.
+E-mail notification will be sent to keep you updated on the status.
 
-First step would be login Marketplace as a Seller as show in this picture.
+Service Type: CCE, License Type: BYOL (Bring your own license)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /_static/images/image6.png
-   :width: 6.53194in
-   :height: 1.79306in
-
-Please be aware that only users which has “Tenant Administrator” role can login to the Marketplace as a Seller.
-
-.. image:: /_static/images/image2.png
-   :width: 6.53194in
-   :height: 4.08958in
-
-On the right side of the page, you would see a button named “Dashboard”.
-
-.. image:: /_static/images/image17.jpg
-   :width: 6.53194in
-   :height: 2.42222in
-
-Please click that and then select “Offering”.
+Seller can use the option of Bring own your license to publish the helm chart based Product Offering. After login, please go the ‘Dashboard’.
 
 .. image:: /_static/images/image18.jpg
    :width: 6.53194in
    :height: 2.35347in
 
-Click on the new Offering to be forwarded to the new page to create your product. There you should fill out all the required information as needed.
+Product Offering is the seller’s published software (incl. service type of the Open Telekom Cloud, license type and seller’s software name) on the Marketplace.
+
+Seller has to provide Helm chart of the Seller’s software to publish CCE based Product Offering. Currently only Service Type - ‘CCE’ is available with License types ‘Open Source, Free, Trial or BYOL (Bring Your Own License).’ The key information cannot be changed once a draft is created.
 
 .. image:: /_static/images/image10.png
    :width: 6.53194in
    :height: 3.05278in
 
-Product Name
-^^^^^^^^^^^^
+Product Offering Name
+^^^^^^^^^^^^^^^^^^^^^
 
-Here you should pick up a name for your product. Customers would find you product in Marketplace with that name.
-
-Please be aware that the product name is permanent and cannot be change as marketplace is committed to Customers that they always refer to the same name for specific product.
+Name of the Product Offering cannot be changed after publication.
 
 .. _service-type-1:
 
 Service Type
 ^^^^^^^^^^^^
 
-Here you should choose which type of product it would be. So far you can only choose CCE as the type of Product which is for Helm Charts to be offered.
+Service Type is the type of IaaS provided by OTC to create the offering (Prerequisite of Service Type CCE: Helm-chart of the product/service).
+
+CCE is OTC’s Cloud Container Engine.
 
 .. _license-type-1:
 
 License Type
 ^^^^^^^^^^^^
 
-As mentioned before, seller is supposed to choose BYOL. This means that customer will get charged 0.00€ if they deploy that product. However, he/she is supposed to reach seller purchase website to buy a license before deploying that application.
+License type is the license option (Open Source, Free, Trial or BYOL (Bring Your own License)) to create the offering.
 
 .. _license-info-1:
 
 License Info
 ^^^^^^^^^^^^
 
-Here you can put information about licensing of your product which would be shown to customers when they select your Product inside Marketplace.
+Field for additional information on license that the seller needs to provide to the customer.
 
 Secret Based License
 ^^^^^^^^^^^^^^^^^^^^
@@ -504,91 +498,83 @@ In that case the seller might have documentation already available and all he/sh
 EULA
 ^^^^
 
-Each company has some terms and conditions that clients need to agree on before using that product. Here Seller can add his/her EULA. When a customer wants to deploy that product, he/she needs to agree on that before being able to deploy that application.
+The EULA (End User License Agreement) of the Product Offering (i.e. Seller’s Software) must be provided. The customer and seller relation is bound by the EULA.
 
 .. _category-1:
 
 Category
 ^^^^^^^^
 
-Here seller can select in which category his/her product would fit in. Customer would filter product inside marketplace based on specific Category.
+Category of the Product Offering ex. Monitoring, Security etc. is selected.
 
 .. _version-1:
 
 Version
 ^^^^^^^
 
-Here you can set the version of your application so Customers would know which version of that has been presented in Marketplace.
+Version of the seller’s software can be provided.
 
 .. _short-description-1:
 
 Short Description
 ^^^^^^^^^^^^^^^^^
 
-Short Description is the information that would be shown to Customers when they find it inside main page of Marketplace. This could be a brief introduction about the product that seller is offering.
+Short description of the Product Offering can be provided in the text field.
 
 .. _full-description-1:
 
 Full Description
 ^^^^^^^^^^^^^^^^
 
-When a customer would find and select a product, this description would go into details of that product and Customer can read and find more information about that product.
+Detailed description of the Product Offering can be provided the text field. 
 
 .. _logo-1:
 
 Logo
 ^^^^
 
-Here Seller is supposed to upload the logo of his/her product.
+Logo of the Seller’s software can be uploaded in the section.
 
 .. _used-software-used-software-license-name-and-link-to-license-1:
 
 “Used Software”, “Used Software License Name” and “Link to License”
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As each application might have used other applications as component, Customers has the right to know which software has been used for that product. This include the name of that and name of the license that has been used for that (Such as MIT or Apache v2.0) so they could be able to review that and make sure this does not violate their policies.
+Addition information of used softwares in the Product Offering (i.e. Seller’s Software) can be provided in these fields.
 
-This list of component's license information would be shown as the detail of the product.
+Seller is obliged to provide transparency on used softwares to the customer.
 
-Post Deployment Information
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Information includes the software names, licenses and links to the terms and conditions of license.
 
-When a customer selects a product and deploys that, this message would be show on the screen to him/her. Here seller can provide day-2 operation hints or guidance that customer can be aware after the deployment.
-
-This is a good place for guiding customers who has deployed and used that product.
+Examples of license are MIT or Apache v2.0.
 
 .. _add-configuration-1:
 
 Add Configuration
 ^^^^^^^^^^^^^^^^^
 
-As the product is a Helm Chart, it has many keys that customer can customized by overwriting with new values. Although Helm Chart could have many keys to get customized, it is up to seller with of them should be on-boarded on Marketplace, so Customers be able to manipulate them.
+Seller can configure the parameters of helm charts of the Product Offering (seller’s software).
 
-Please be aware that some keys that have been added by seller to customize deployment could also be hidden to customer. This can be used when your help chart needs to be modified based on Open Telekom Cloud CCE and seller wants to make that change permanent, so customers did not change it by mistake.
-
-Configurations could be a “Text input” (Text or Array), Option (Text or Array) which is like “Text Input” but default values are fixed and customer can only select from those values to choose or a Toggle (Boolean) that customer needs to make it as True or False.
-
-.. _text-input-1:
+Configurations can be (Diagram 8) a “Text input” (Text or Array), Option (Text or Array) such as “Text Input” or a Toggle (Boolean) that customer needs to provide as True or False.
 
 Text input
 ''''''''''
 
-This can be used for adding a key which is the type of string or array.
+Option can be used for adding a key that is of type string or array.
 
-.. image:: /_static/images/image11.png
+.. figure:: /_static/images/image11.png
    :width: 6.53194in
    :height: 3.77361in
+   :alt: Diagram 8 Configuration Options
 
-.. _configuration-key-3:
+   **Diagram 8** Configuration Options
 
 Configuration Key
                  
 
 Is the equivalent of Helm Chart key. It means that rules of the Yaml shall be followed here.
 
-For example, if inside values.yaml file there is main key as “global” and then “storageClass” as sub key, then the content of “Configuration Key” would be “global. storageClass”
-
-.. _text-input-label-1:
+For example, if inside values.yaml file there is main key as “global” and then “storageClass” as sub key, then the content of “Configuration Key” would be “global. storageClass”.
 
 Text input label
                 
@@ -597,16 +583,12 @@ This column is the label that customer see during configuration of deployment. I
 
 For example, for the key as “global. storageClass”, seller can pick up the label as “storageClass”. In that case customers would understand that they are supposed to put the name of the preferred Storage Class in here.
 
-.. _required-1:
-
 Required
         
 
 There are some configurations that could be optional or mandatory. If customer sets it then during deployment it would be overwrite and if not the default value form “values.yaml” would be picked up.
 
 If there is a configuration that seller wants the customer to change it, then he/she can enable the required toggle so customers should put value for that.
-
-.. _confidential-1:
 
 Confidential
             
@@ -615,14 +597,9 @@ Some keys include some confidential information that during filling the key by c
 
 For example, if the key is the default password of the application, then the seller can enable this feature. During the configuration it would be treated as a password and content cannot be seen during filling the information.
 
-.. _validation-rule-1:
-
 Validation Rule
                
-
 If sellers want to restrict the content that customer would write as the value of that key, he/she can put regex rule, so customer are forced to follow that rule during filling the value. For that regex rule there is a “Error message” which seller can put hint or example to help customers to understand about the condition that is required.
-
-.. _hidden-2:
 
 Hidden
       
@@ -631,21 +608,15 @@ If seller enables that, then that configuration would be overwrite default helm 
 
 Please be aware that in that case “Default value” needs to be filled.
 
-.. _multiple-2:
-
 Multiple
         
 
 This is the place where seller can set this configuration as an array. If multiple has been enabled, then customer can put more than one value for that key.
 
-.. _default-value-2:
-
 Default value
              
 
 If seller wants, he/she can default value for that configuration. Customers would still be able to overwrite that.
-
-.. _hint-text-2:
 
 Hint text
          
@@ -654,36 +625,24 @@ This column could help customers by adding a hint under the label which could pr
 
 For example, for the key as “global. storageClass” with the label of “storageClass”, seller can pick up the Hint text as “Kubernetes Storage Class for disk”. In that case customer would see a label named “storageClass” and beneath that a like which says, “Kubernetes Storage Class for disk”.
 
-.. _tooltip-text-3:
-
 Tooltip text
             
 
 This column would be used to show additional help when customer hover his/her mouse on that configuration column.
 
-For example, for the key as “global. storageClass” with the label of “storageClass”, seller can pick up the Tooltip text as “You can use kubectl get storageclass to list them”. In that case customer would see a label named “storageClass” and whenever hover his/her mouse over that label would see “You can use kubectl get storageclass to list them” above that column.
-
-.. _option-1:
+For example, for the key as “global.storageClass” with the label of “storageClass”, seller can pick up the Tooltip text as “You can use kubectl get storageclass to list them”. In that case customer would see a label named “storageClass” and whenever hover his/her mouse over that label would see “You can use kubectl get storageclass to list them” above that column.
 
 Option
 ''''''
 
 This can be used for adding a key which is the type of string or array. The only difference is that Seller makes the values to pick up prepared so customers can only pick from those lists. For instance, imagine you have a key “serviceType” and the answer should only be “ClusterIP”, “Nodeport” or “LoadBalancer”. Then the seller can pick that as the type of configuration and already add those as the pre-defined values.
 
-.. image:: /_static/images/image12.png
-   :width: 6.53194in
-   :height: 3.69097in
-
-.. _configuration-key-4:
-
 Configuration Key
                  
 
 Is the equivalent of Helm Chart key. It means that rules of the Yaml shall be followed here.
 
-For example, if inside values.yaml file there is main key as “global” and then “storageClass” as sub key, then the content of “Configuration Key” would be “global. storageClass”
-
-.. _optional-label-1:
+For example, if inside values.yaml file there is main key as “global” and then “storageClass” as sub key, then the content of “Configuration Key” would be “global. storageClass”.
 
 Optional label
               
@@ -692,178 +651,139 @@ This column is the label that customer see during configuration of deployment. I
 
 For example, for the key as “global. storageClass”, seller can pick up the label as “storageClass”. In that case customers would understand that they are supposed to put the name of the preferred Storage Class in here.
 
-.. _labelvalue-1:
-
 Label/Value
            
 
 There should a list of possible values to choose and a label for reach to help customer to understand which one to choose based on the situation.
 
-.. _multiple-3:
-
 Multiple
-        
 
 This is the place where seller can set this configuration as an array. If multiple has been enabled, then customer can put more than one value for that key.
 
-.. _default-value-3:
 
 Default value
-             
 
 If seller wants, he/she can default value for that configuration. Customers would still be able to overwrite that.
 
-.. _hint-text-3:
 
 Hint text
-         
 
 This column could help customers by adding a hint under the label which could provide more help for Customers. It appears as a short line beneath that configuration label.
 
 For example, for the key as “global. storageClass” with the label of “storageClass”, seller can pick up the Hint text as “Kubernetes Storage Class for disk”. In that case customer would see a label named “storageClass” and beneath that a like which says, “Kubernetes Storage Class for disk”.
 
-.. _tooltip-text-4:
-
 Tooltip text
-            
 
 This column would be used to show additional help when customer hover his/her mouse on that configuration column.
 
 For example, for the key as “global. storageClass” with the label of “storageClass”, seller can pick up the Tooltip text as “You can use kubectl get storageclass to list them”. In that case customer would see a label named “storageClass” and whenever hover his/her mouse over that label would see “You can use kubectl get storageclass to list them” above that column.
-
-.. _toggle-1:
 
 Toggle
 ''''''
 
 This can be used for adding a key which is the type of Boolean.
 
-.. image:: /_static/images/image13.png
-   :width: 6.53194in
-   :height: 3.75764in
-
-.. _configuration-key-5:
-
 Configuration Key
-                 
 
 Is the equivalent of Helm Chart key. It means that rules of the Yaml shall be followed here.
 
 For example, if inside values.yaml file there is main key as “global” and then “storageClass” as sub key, then the content of “Configuration Key” would be “global. storageClass”
 
-.. _togglelabel-1:
-
 Toggle/label
-            
 
 This column is the label that customer see during configuration of deployment. Instead of the content of the key they would see this name for that configuration which means the name should be clear to understand for customer.
 
 For example, for the key as “global. storageClass”, seller can pick up the label as “storageClass”. In that case customers would understand that they are supposed to put the name of the preferred Storage Class in here.
 
-.. _default-state-1:
-
 Default State
-             
 
 This variable by default is whether true or false.
 
-.. _hidden-3:
-
 Hidden
-      
 
 If seller enables that, then that configuration would be overwrite default helm chart value. However, customers are not able to see or change the content of that.
 
 Please be aware that in that case “Default value” needs to be filled.
 
-.. _tooltip-text-5:
 
 Tooltip text
-            
 
 This column would be used to show additional help when customer hover his/her mouse on that configuration column.
 
 For example, for the key as “global. storageClass” with the label of “storageClass”, seller can pick up the Tooltip text as “You can use kubectl get storageclass to list them”. In that case customer would see a label named “storageClass” and whenever hover his/her mouse over that label would see “You can use kubectl get storageclass to list them” above that column.
 
-.. _add-pre-deployment-guide-1:
-
 Add pre-Deployment guide
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-When a customer selects a product, this message would be show on the screen to him/her. Here seller can provide pre-deployment hints or guidance that customer can be aware before the deployment.
+Seller can provide pre-deployment information that a customer needs to know before deployment.
 
-This is a good place for guiding customers who wants to use that product.
+Information such as suggested infrastructure environment or sizing etc.
+
+This is a good place for guiding customers who wants to use the product offering.
 
 .. image:: /_static/images/image14.png
    :width: 6.53194in
    :height: 2.74583in
 
-.. _add-deployment-guide-1:
-
 Add deployment guide
 ^^^^^^^^^^^^^^^^^^^^
 
-Although hints and tooltips that seller would add to each configuration could be descriptive, seller needs to prepare small document to depict how to deploy and customize that product. The whole content would be shown to customer as an installation guide.
+Although hints and tooltips that seller would add to each configuration could be descriptive, seller may prepare small document to depict how to deploy and customize that product. The whole content would be shown to customer as an installation guide.
 
 .. image:: /_static/images/image15.png
    :width: 6.53194in
    :height: 2.72431in
 
-.. _post-post-deployment-guide-1:
-
 Post post-deployment guide
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When a customer selects a product and deploys that, this message would be show on the screen to him/her. Here seller can provide day-2 operation hints or guidance that customer can be aware after the deployment.
-
-This is a good place for guiding customers who has deployed and used that product.
+Information provided to support customer after the deployment of the Product Offering. Ex. How can the customer operate seller’s product offering.
 
 .. image:: /_static/images/image16.png
    :width: 6.53194in
    :height: 2.71528in
 
-.. _seller-helm-chart-address-1:
-
 Seller Helm Chart Address
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Marketplace would require grabbing the Helm Chart of product from a helm registry. Here seller is supposed to put the address of that.
-
-.. _seller-helm-chart-version-1:
+Marketplace will fetch the helm chart of the Product Offering (seller’s software) from the provided link and eventually store the helm chart in an internal repository.
 
 Seller Helm Chart Version
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As each Helm Chart has different versions available, seller is supposed to mention which version from helm chart should be presented to customers. Marketplace would grab and on board only that specific version of helm chart.
-
-.. _requested-release-date-1:
+Helm chart version that the Marketplace will use in Product Offering.
 
 Requested Release Date
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
-Based on the preference or company's policy, seller can let Marketplace knows when a proper time for that product (or product update) would be to get released and customers can use that.
+Seller can request a release date to publish the Product Offering.
 
-Please be aware that Marketplace does not have any commitment to this date as there might be some technical efforts that marketplace needs to tackle before releasing that to customer.
+The publication (date and time) lies solely on discretion of Marketplace due to internal processes.
 
-.. _submit-the-request-1:
+Request release date is not guaranteed but will be considered to the best of case.
 
 Submit the request
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
-When seller is happy with the information, he/she has provided for the product and if all required data has been added and the product has been evaluated by the seller itself, then it would be time to submit that for further investigation by Marketplace and set a release time for that. Please be aware that this might be a time consuming as marketplace should take care of some technical matters before preparing the product for release.
+Seller can submit the request when all fields have been duly filled.
 
-Seller would be notified by email when the product has been approved with a release time or has been rejected because of a reason.
+Marketplace will review the request and approve the publication.
+
+Please note that the review process will take some time.
+
+E-mail notification will be sent to keep you updated on the status.
+
 
 Test Deploy
-~~~~~~~~~~~
+-----------
 
-Before offering a product to the customer, seller needs to make sure that the deployment would be successful, and customer would be able to use that. Marketplace provide this chance that before submitting a request to be reviewed and published, sellers can try that deployment and check any failure or issue.
+Seller has the option to test the Product Offering via ‘Test Deploy’ button.
 
-It is highly recommended that seller try their product with different configuration to make sure customers would not face any failure during deployment.
+Test Deploy feature gives the Seller a possibility to test the configurations set.
 
-This can be done when a new product is created or when a new update of old product is about to be presented.
+It is highly advisable to test the Product Offering in order to submit a valid request for publication and to ensure a working Product Offering is offered to customers.
 
-To run it simply select the dashboard on the top right of the corner. Then select “Products”. There you can pick the product that you want to have test. Then you would see a list of available revision and can pick the one you want to evaluate the deployment. Below there must be a button named “Test deploy”. When you click on that you would see the list of configurations as customers can see to customize the deployment and deploy it to make sure everything is working fine.
+Test deployment may incur charges based on the infrastructure used to test the Product Offering.
 
 Seller Dashboard
 ----------------
@@ -988,7 +908,7 @@ One way is to click on “New Revision” which automatically create a new revis
 
 The other way is to edit any already-approved revision and click to create a new revision out of it.
 
-.. image:: /_static/images/image22.png
+.. image:: /_static/images/image22.jpg
    :width: 6.53194in
    :height: 2.49306in
 
@@ -1009,7 +929,7 @@ To unpublish a product, seller needs to click on “Dashboard” on the top righ
 
 Then there is a button named “Unpublish”. Seller can select that and change that product state to “Unpublished”.
 
-.. image:: /_static/images/image22.png
+.. image:: /_static/images/image22.jpg
    :width: 6.53194in
    :height: 2.49375in
 
@@ -1038,7 +958,7 @@ Then select “Offering”. There he/she can pick up the Product he/she wants to
 
 Then there is a button named “End of Life”.
 
-.. image:: /_static/images/image22.png
+.. image:: /_static/images/image22.jpg
    :width: 6.53194in
    :height: 2.49375in
 
