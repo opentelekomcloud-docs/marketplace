@@ -72,7 +72,74 @@ If the login is successful, then you are directed to the Marketplace Homepage (D
 
    **Diagram 5** Marketplace Homepage
 
-.. _publish-product-offering-1:
+Login via MyWorkplace
+~~~~~~~~~~~~~~~~~~~~~
+
+If user wants to use ‘MyWorkplace’, User needs to find the corresponding IAM user for his/her ‘MyWorkplace’ account.
+
+The process is straight forward. User needs to login to `MyWorkplace <https://business-sso.t-systems.com/MyWorkplace>`_. 
+
+.. figure:: /_static/images/image36.jpg
+   :width: 6.53194in
+   :height: 2.35139in
+   :alt: Diagram 6 MyWorkplace
+
+   **Diagram 6** MyWorkplace
+
+After login then please select the domain that you owned and click on it to open ‘OTC Console’.
+
+.. figure:: /_static/images/image37.jpg
+   :width: 6.53194in
+   :height: 2.35139in
+   :alt: Diagram 7 MyWorkplace Login
+
+   **Diagram 7** MyWorkplace Login
+
+It would redirect user to the ‘OTC Console’ where user can understand what is his/her Information required for login (‘Domain name’ and ‘Username’).
+
+In the ‘OTC Console’ user can find the (‘Domain name’ and ‘Username’).
+
+.. figure:: /_static/images/image38.jpg
+   :width: 6.53194in
+   :height: 2.35139in
+   :alt: Diagram 8 OTC Console
+
+   **Diagram 8** OTC Console
+
+Reset MyWorkplace IAM User
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+It is very importatnt to consider that this ‘IAM User’ does not have the same ‘Password’ as ‘MyWorkplace’ which means to be able to use, user needs to reset it's credential.
+
+To reset the ‘Password’, user needs to try to reset the password by reaching `OTC Console <https://auth.otc.t-systems.com/>`_ and then click on Forgot ‘password?’.
+
+.. figure:: /_static/images/image39.png
+   :width: 6.53194in
+   :height: 2.35139in
+   :alt: Diagram 9 Forgot Password
+
+   **Diagram 9** Forgot Password
+
+In the following page user should put ‘Domain name’ inside the ‘Name of the administrator account’ and ‘Username’ inside the IAM user name, email and the the CAPTCHA code to request to reset the password.
+
+.. figure:: /_static/images/image40.png
+   :width: 6.53194in
+   :height: 2.35139in
+   :alt: Diagram 10 Reset Password
+
+   **Diagram 10** Reset Password
+
+Login via IAM
+~~~~~~~~~~~~~
+
+Having a user created by IAM and proper privilege, users would be able to login to Marketplace. Information required for login (‘Domain name’ and ‘Username’) can be fetched from OTC as following diagram.
+
+.. figure:: /_static/images/image35.jpg
+   :width: 6.53194in
+   :height: 2.35139in
+   :alt: Diagram 11 OTC Console
+
+   **Diagram 11** OTC Console
 
 Publish Product Offering
 ------------------------
@@ -87,9 +154,9 @@ Seller can use the license type ‘Open source, free or trial’ to use offer he
 .. figure:: /_static/images/image9.png
    :width: 6.53194in
    :height: 2.35139in
-   :alt: Diagram 6 New Offering
+   :alt: Diagram 12 New Offering
 
-   **Diagram 6** New Offering
+   **Diagram 12** New Offering
 
 Product Offering is the seller’s published software (incl. service type of the Open Telekom Cloud, license type and seller’s software name) on the Marketplace.
 
@@ -98,9 +165,9 @@ Seller has to provide Helm chart of the Seller’s software to publish CCE based
 .. figure:: /_static/images/image10.png
    :width: 6.53194in
    :height: 3.05278in
-   :alt: Diagram 7 Product Offering (Key Information)
+   :alt: Diagram 13 Product Offering (Key Information)
 
-   **Diagram 7** Product Offering (Key Information)
+   **Diagram 13** Product Offering (Key Information)
 
 Product Offering Name
 ^^^^^^^^^^^^^^^^^^^^^
@@ -180,9 +247,9 @@ Option can be used for adding a key that is of type string or array.
 .. figure:: /_static/images/image11.png
    :width: 6.53194in
    :height: 3.77361in
-   :alt: Diagram 8 Configuration Options
+   :alt: Diagram 14 Configuration Options
 
-   **Diagram 8** Configuration Options
+   **Diagram 14** Configuration Options
 
 Configuration Key
                  
