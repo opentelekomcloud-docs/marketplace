@@ -7,3 +7,4 @@ MarketPlace - User Guide
 
    service_overview
    seller
+   customer
