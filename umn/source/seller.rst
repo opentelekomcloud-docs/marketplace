@@ -857,7 +857,7 @@ Seller Dashboard
 
 After a successful login, Seller would use the dashboard to manage the Offerings. This page is available to click on the top right corner of the page. Dashboard has been divided into two sections which we would discuss the details in below.
 
-.. image:: /_static/images/image19.png
+.. image:: /_static/images/image19.jpg
    :width: 6.53194in
    :height: 2.44931in
 
@@ -880,6 +880,17 @@ Workloads
 Every time a deployment has been happened by seller, the status of that including the State, time and the name of the product would be recorded here so sellers can see if the deployment has been successful or not.
 
 .. image:: /_static/images/image21.png
+   :width: 6.53194in
+   :height: 1.71111in
+
+Sales History
+~~~~~~~~~~~~~
+
+Offering a product inside the marketplace would be a great opportunity for Sellers to reach Customers for future business establishment.
+Marketplace offers this facility that if a customer used any product of any seller, the seller can see the name and time of deployment plus the contant details of the company.
+Seller can use this opportunity to expand the business with the customers.
+
+.. image:: /_static/images/image54.jpg
    :width: 6.53194in
    :height: 1.71111in
 
@@ -959,7 +970,7 @@ The rest of the procedure and configuration would be the same as creating the pr
 
 To update the product seller needs to click on “Dashboard” on the top right corner and then “Offering”.
 
-.. image:: /_static/images/image19.png
+.. image:: /_static/images/image19.jpg
    :width: 6.53194in
    :height: 2.44931in
 
@@ -1013,7 +1024,7 @@ A product would be available in Marketplace forever, until the seller has decide
 
 To put a product into “End of Life”, seller needs to click on “Dashboard” on the top right corner.
 
-.. image:: /_static/images/image19.png
+.. image:: /_static/images/image19.jpg
    :width: 6.53194in
    :height: 2.44931in
 
@@ -1031,6 +1042,6 @@ Then there is a button named “End of Life”.
 
 Please be aware that this process is irreversible, and Seller cannot bring that product back to business anymore!
 
-.. |image1| image:: /_static/images/image19.png
+.. |image1| image:: /_static/images/image19.jpg
    :width: 6.53194in
    :height: 2.44931in
