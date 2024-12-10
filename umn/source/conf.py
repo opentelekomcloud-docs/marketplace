@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'mkp-umn.tex',
-     u'Marketplace - User Guide',
+    u'Marketplace - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 
