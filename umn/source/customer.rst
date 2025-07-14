@@ -148,13 +148,144 @@ As soon as the data has been reviewed and approved, all information can be seen 
 
    **Profile**
 
+Role Management
+---------------
+
+With Marketplace Role management, the Tenant Owener would be able to deligate the role to any other IAM users of the tenant.
+
+* Please not that this process would happened gradually and this means that thoses who have "Tenant Administrator" can still login to Marketplace with no restriction. However, as the next step it would be revoked and only those who have role can login.
+
+Who is the Tenant Owner?
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Each tenant has one IAM user that is linked to OTC MyworkPlace. This the first account that the customer of OTC can use to access OTC Console. This account has been created automatically and is a combination of a random number plus Domain-ID. This is a unique account and cannot be deleted.
+
+Manage Role Dashboard
+~~~~~~~~~~~~~~~~~~~~~
+
+When the tenant owner logs in to Marketplace as the customer, there is specific Dashboard for him/her named "Manage Role". 
+There all the users that have role can be seen.
+Alternatively by clicking on "Show users without roles", all of the remaining IAM users that has no role can be seen and get a role.
+
+.. figure:: /_static/images/image61.jpg
+   :width: 6in
+   :height: 2in
+   :alt: Manage Role
+
+   **Manage Role**
+
+Marketplace Roles
+~~~~~~~~~~~~~~~~~
+
+Marketplace has three different Roles as Customer which can be assigend to any IAM user.
+
+* **Reports:** This is the minimum priviledge which is also a mandatory role. IAM users having this role can have access to any report inside the Marketplace such as the Workloads, Subscription. This Role does not allow anyone to be able to change something, includein the Deploy or Subscribe any Product Offering.
+* **Profile Management:** IAM users that have this role has all the priviledges that **Reports** has. they can also update information about the Customer Profile.
+* **Deployment/Subscription:** IAM users that have this role has all the priviledges that **Reports** has. they can also Deploy or Subscribe any Product Offering.
+
+Assign Marketplace Roles
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tenant owner can reach the Manage Role Dashboard and then click on "Show users without roles" to assign a new user a role.
+
+.. figure:: /_static/images/image62.jpg
+   :width: 6in
+   :height: 2in
+   :alt: Add Role to new IAM User
+
+   **Add Role to new IAM User**
+
+Then he/she can edit any User that does not any Role and the select which Role shall be assign to that IAM User.
+
+.. figure:: /_static/images/image63.png
+   :width: 5in
+   :height: 3in
+   :alt: Add Role to new IAM User
+
+   **Add Role to new IAM User**
+
+Update Marketplace Roles
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tenant owner can reach the Manage Role Dashboard and then click on "Show users with roles" to edit Roles of a User.
+
+.. figure:: /_static/images/image61.jpg
+   :width: 6in
+   :height: 2in
+   :alt: Update Roles of an IAM User
+
+   **Update Roles of an IAM User**
+
+Then he/she can edit any User that has Role and the select which Role shall be assign/revoked for that IAM User.
+
+.. figure:: /_static/images/image63.png
+   :width: 5in
+   :height: 3in
+   :alt: Update Roles of an IAM User
+
+   **Update Roles of an IAM User**
+
+Revoke Marketplace Roles
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tenant owner can reach the Manage Role Dashboard and then click on "Show users with roles" to Revoke Roles of a User.
+
+.. figure:: /_static/images/image61.jpg
+   :width: 6in
+   :height: 2in
+   :alt: Revoke Roles of an IAM User
+
+   **Revoke Roles of an IAM User**
+
+Then he/she can click on delete icon of any User that has Role to remove his/her Roles.
+
+.. figure:: /_static/images/image64.png
+   :width: 6in
+   :height: 2in
+   :alt: Revoke Roles of an IAM User
+
+   **Revoke Roles of an IAM User**
+
 Purchase and Deploy a Product Offering
 --------------------------------------
 
 Applications that need to be deployed, need an environment to use as the deployment target. For instance, if you want to deploy a Product of type CCE a CCE cluster needs to be `set up and running <https://docs.otc.t-systems.com/cloud-container-engine/umn/getting_started/introduction.html>`_ to deploy. 
 For SaaS style products requiring a subscription there are normally no preparations neccessary to make the service available to your applications or users.
 
-.. _cce-open-source-free-or-trial-1:
+Private Offer
+~~~~~~~~~~~~~
+
+This product type allows sellers to advertise offerings on the OTC Marketplace and collect customer leads in a structured way.
+
+These products are not purchased directly through the Marketplace. Instead, interested customers "request" the product. Sellers can also define specific questions which customers have to answer to more easily qualify leads. Once a customer requested a product, the lead will show up in the sellers dashboard and additionally a mail is sent to the seller. The seller can then contact the customer directly to establish a business relationship and initiate the process towards a business deal.
+
+This product type is ideal for products that are not yet / supposed to be fully integrated into the Marketplace.
+It typically includes offerings that:
+
+* Lack the technical requirements for a deep integration.
+* Are from sellers not yet ready to commit to a full integration.
+* Are from sellers who are working on a full integration but want to already establish a presence.
+* Are from sellers who are working on a full integration but want to already establish a presence.
+* Are a type not yet technically supported by the Marketplace.
+* Are better suited for a private, custom offer (e.g., professional services).
+
+When you select those products then as shown in the picture you would see wealth of information such as the details of that offer and the different levels of Plan to request.
+
+.. image:: /_static/images/image58.jpg
+   :width: 6in
+   :height: 4in
+
+Customer can then read all the features that have been offered on each plan and eventually pick up the one that suits his requirements and click on ‘Request <Plan Name>’.
+
+After Selecting Plan that suits you then there might be couple of questions to be answered.
+
+Answering to those questions are quite optional and there are not mandatory.
+
+At then end, also there is a section that Customer can write any extra comment if he will to provide more details.
+
+.. image:: /_static/images/image59.jpg
+   :width: 6in
+   :height: 4in
 
 CCE Open Source, Free or Trial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -333,3 +464,18 @@ Every time a subscription has been activated or deactivated then the information
 .. image:: /_static/images/image48.jpg
    :width: 6.53194in
    :height: 3.13823in
+
+Private Offer Requests
+~~~~~~~~~~~~~~~~~~~~~~
+
+Any Private Offer requests from customer would be shown here. Customer can see on which product and which Plan he has requested.
+
+.. image:: /_static/images/image60.jpg
+   :width: 6in
+   :height: 4in
+
+In additions, customer can see the answers and comment that he has added during request.
+
+.. image:: /_static/images/image57.jpg
+   :width: 6in
+   :height: 4in

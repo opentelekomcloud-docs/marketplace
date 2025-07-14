@@ -141,10 +141,247 @@ Having a user created by IAM and proper privilege, users would be able to login 
 
    **Diagram 11** OTC Console
 
+Role Management
+---------------
+
+With Marketplace Role management, the Tenant Owener would be able to deligate the role to any other IAM users of the tenant. 
+
+* Please not that this process would happened gradually and this means that thoses who have "Tenant Administrator" can still login to Marketplace with no restriction. However, as the next step it would be revoked and only those who have role can login.
+
+Who is the Tenant Owner?
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Each tenant has one IAM user that is linked to OTC MyworkPlace. This the first account that the customer of OTC can use to access OTC Console. This account has been created automatically and is a combination of a random number plus Domain-ID. This is a unique account and cannot be deleted.
+
+Manage Role Dashboard
+~~~~~~~~~~~~~~~~~~~~~
+
+When the tenant owner logs in to Marketplace as the seller, there is specific Dashboard for him/her named "Manage Role". 
+There all the users that have role can be seen.
+Alternatively by clicking on "Show users without roles", all of the remaining IAM users that has no role can be seen and get a role.
+
+.. figure:: /_static/images/image65.jpg
+   :width: 6in
+   :height: 2in
+   :alt: Manage Role
+
+   **Manage Role**
+
+Marketplace Roles
+~~~~~~~~~~~~~~~~~
+
+Marketplace has three different Roles as seller which can be assigend to any IAM user.
+
+* **Reports:** This is the minimum priviledge which is also a mandatory role. IAM users having this role can have access to any report inside the Marketplace such as the Sales history, information about the Product Offering. This Role does not allow anyone to be able to change something, includein the Seller Profile information on any Product Offering.
+* **Profile Management:** IAM users that have this role has all the priviledges that **Reports** has. they can also update information about the Seller Profile.
+* **•	Product Offering:** IAM users that have this role has all the priviledges that Reports has. they can also manage any Product Offering includeing on-boarding off-boarding and updating.
+
+Assign Marketplace Roles
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tenant owner can reach the Manage Role Dashboard and then click on "Show users without roles" to assign a new user a role.
+
+.. figure:: /_static/images/image66.jpg
+   :width: 6in
+   :height: 2in
+   :alt: Add Role to new IAM User
+
+   **Add Role to new IAM User**
+
+Then he/she can edit any User that does not any Role and the select which Role shall be assign to that IAM User.
+
+.. figure:: /_static/images/image67.png
+   :width: 5in
+   :height: 3in
+   :alt: Add Role to new IAM User
+
+   **Add Role to new IAM User**
+
+Update Marketplace Roles
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tenant owner can reach the Manage Role Dashboard and then click on "Show users with roles" to edit Roles of a User.
+
+.. figure:: /_static/images/image65.jpg
+   :width: 6in
+   :height: 2in
+   :alt: Update Roles of an IAM User
+
+   **Update Roles of an IAM User**
+
+Then he/she can edit any User that has Role and the select which Role shall be assign/revoked for that IAM User.
+
+.. figure:: /_static/images/image67.png
+   :width: 5in
+   :height: 3in
+   :alt: Update Roles of an IAM User
+
+   **Update Roles of an IAM User**
+
+Revoke Marketplace Roles
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tenant owner can reach the Manage Role Dashboard and then click on "Show users with roles" to Revoke Roles of a User.
+
+.. figure:: /_static/images/image65.jpg
+   :width: 6in
+   :height: 2in
+   :alt: Revoke Roles of an IAM User
+
+   **Revoke Roles of an IAM User**
+
+Then he/she can click on delete icon of any User that has Role to remove his/her Roles.
+
+.. figure:: /_static/images/image64.png
+   :width: 6in
+   :height: 2in
+   :alt: Revoke Roles of an IAM User
+
+   **Revoke Roles of an IAM User**
+
 Publish Product Offering
 ------------------------
 
 Sellers can use the component ‘Dashboard’ and sub-component ‘Product Offering Provisioning’ to publish the Product Offering.
+
+Service Type: Private Offer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This product type allows sellers to advertise offerings on the OTC Marketplace and collect customer leads in a structured way.
+
+These products are not purchased directly through the Marketplace. Instead, interested customers "request" the product. Sellers can also define specific questions which customers have to answer to more easily qualify leads. Once a customer requested a product, the lead will show up in the sellers dashboard and additionally a mail is sent to the seller. The seller can then contact the customer directly to establish a business relationship and initiate the process towards a business deal.
+
+This product type is ideal for products that are not yet / supposed to be fully integrated into the Marketplace.
+It typically includes offerings that:
+
+* Lack the technical requirements for a deep integration.
+* Are from sellers not yet ready to commit to a full integration.
+* Are from sellers who are working on a full integration but want to already establish a presence.
+* Are from sellers who are working on a full integration but want to already establish a presence.
+* Are a type not yet technically supported by the Marketplace.
+* Are better suited for a private, custom offer (e.g., professional services).
+
+**Eligible Product Offerings**
+
+Only the following types of product offerings may be advertised:
+
+**Software products**
+* That can be delivered to customers on the Open Telekom Cloud (OTC).
+Professional services:
+* Related to the OTC or to products running on it.
+* Related to the broader Telekom ecosystem.
+* Provided by a Telekom-owned business unit.
+Note: Offerings that do not fit these criteria are not permitted on the OTC Marketplace.
+
+After login, please go the ‘Dashboard’ and then click on ‘New Offering’.
+
+.. figure:: /_static/images/image9.png
+   :width: 6.53194in
+   :height: 2.35139in
+   :alt: Diagram 12 New Offering
+
+   **Diagram 12** New Offering
+
+Products which sellers publish on the OTC marketplace are called ‘Product Offerings’. 
+
+
+.. figure:: /_static/images/image10.png
+   :width: 6.53194in
+   :height: 3.05278in
+   :alt: Diagram 13 Product Offering (Key Information)
+
+   **Diagram 13** Product Offering (Key Information)
+
+Product Offering Name
+^^^^^^^^^^^^^^^^^^^^^
+
+The name of the Product Offering. Please be aware that the name cannot be changed after publication.
+
+Service Type
+^^^^^^^^^^^^
+
+The Service Type is the type of product offering to be created Select ‘Private Offer’.
+
+Category
+^^^^^^^^
+
+Choose the most appropriate category or add a new one if needed.
+
+Short Description
+^^^^^^^^^^^^^^^^^
+
+Add a short description for your product offering in the text field.
+
+Full Description
+^^^^^^^^^^^^^^^^
+
+Add a short summary for your product offering in the text field. 
+
+Logo
+^^^^
+
+Upload a logo for the specific offering (preferred) or your company logo.
+
+Set Product Plans
+^^^^^^^^^^^^^^^^^
+
+You can offer customers multiple plans (e.g.: Standard, Enterprise, Platinum) for your product offering which will all be displayed on your product offering page. The number of plans is not restricted. Each plan can have different details for example regarding pricing, SLAs, features and services.
+
+To create a new plan click on ‘Click to set product plans’
+ 
+
+.. figure:: /_static/images/image55.png
+   :width: 4.5in
+   :height: 6in
+   :alt: Set Product Plans
+
+**Plan name (mandatory)**
+
+Provide a name for the plan (e.g.: Standard, Enterprise, Platinum)
+
+**Plan description (mandatory)**
+
+Add a description for the plan which briefly explains what the plan includes.
+
+**Pricing details**
+
+Enter pricing details. You can leave this blank if the price is variable or quote-based.
+
+**Features**
+
+Add key features as bullet points (e.g., "Up to 5 user accounts," "24/7 Support") one by one.
+
+**Questions**
+
+In this section you can create questions for the customer to answer when they request the plan. This helps you to qualify leads. Be aware that answering the questions is optional and customers can skip this step if they choose to do so.
+You can set the answer format to:
+•	Text Input: For open-ended answers.
+•	Single Selection: For dropdown or radio button lists.
+•	Multi-Selection: For checkbox lists.
+•	Yes / No: For simple binary questions.
+
+**Saving the plan**
+
+To save the configuration of the plan click "Save".
+
+Release Date
+^^^^^^^^^^^^
+
+Choose the date you want your offering to become visible in the Marketplace.
+
+Save or Publish
+^^^^^^^^^^^^^^^
+
+Click "Save" to save your progress as a draft or click "Save & Publish" to request the release of your product offering the OTC Marketplace. When the OTC Marketplace team has reviewed your request your product offering will be published.
+
+Reviewing Private Offer Requests
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Private offer requests by customers will be visible in your dashboard to track them. Additionally you will receive a notification mail to the mail address which is tied to your OTC account.
+
+To see the answers which customers provided to your questions click on “Details” on the request you are interested in. A pop-up window will list all the information.
+
+Be aware that the marketplace solely facilitates the creation and connection between sellers and customers, while all responsibilities for contacting customers and initiating business deals rests with the seller.
 
 Service Type: CCE, License Type: Open Source, Free, Trial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -191,8 +428,8 @@ License Info
 
 Field for additional information on license that the seller needs to provide to the customer.
 
-EULA
-^^^^
+Contractual Documents
+^^^^^^^^^^^^^^^^^^^^^
 
 The EULA (End User License Agreement) of the Product Offering (i.e. Seller’s Software) must be provided. The customer and seller relation is bound by the EULA.
 
@@ -562,8 +799,8 @@ In that case the seller might have documentation already available and all he/sh
 
 .. _eula-1:
 
-EULA
-^^^^
+Contractual Documents
+^^^^^^^^^^^^^^^^^^^^^
 
 The EULA (End User License Agreement) of the Product Offering (i.e. Seller’s Software) must be provided. The customer and seller relation is bound by the EULA.
 
@@ -887,12 +1124,29 @@ Sales History
 ~~~~~~~~~~~~~
 
 Offering a product inside the marketplace would be a great opportunity for Sellers to reach Customers for future business establishment.
+
 Marketplace offers this facility that if a customer used any product of any seller, the seller can see the name and time of deployment plus the contant details of the company.
+
 Seller can use this opportunity to expand the business with the customers.
 
 .. image:: /_static/images/image54.jpg
    :width: 6.53194in
    :height: 1.71111in
+
+Private Offer Requests
+~~~~~~~~~~~~~~~~~~~~~~
+
+Any Private Offer requests from customer would be shown here. Seller can see which customer is interested on which product and which Plan.
+
+.. image:: /_static/images/image56.jpg
+   :width: 6in
+   :height: 4in
+
+In additions, seller can see the answers and comment that customer has added during request.
+
+.. image:: /_static/images/image57.jpg
+   :width: 6in
+   :height: 4in
 
 Product Lifecycle
 -----------------
